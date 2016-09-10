@@ -9,32 +9,79 @@ public class CirculoTest {
 	
 	@Test
 	public void crearUnCirculoConRadio2() {
-		fail("Not yet implemented");
+		Circulo miCirculo = new Circulo();
+		Double radioEsperado = 2.0;
+		Double radioObtenido;		
+		
+		miCirculo.crearCirculo(radioEsperado);
+		
+		radioObtenido = miCirculo.mostrarRadio();
+		
+		assertEquals(radioEsperado, radioObtenido, 0.01);
+		
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio3Punto7() {
-		fail("Not yet implemented");
+		Double radioEsperado = 3.7;
+		Double radioObtenido;
+		
+		Circulo miCirculo = new Circulo(radioEsperado);
+
+		radioObtenido = miCirculo.mostrarRadio();
+		
+		assertEquals(radioEsperado, radioObtenido, 0.01);
+		
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio5() {
-		fail("Not yet implemented");
+		Double radioEsperado = 5.0;
+		Double radioObtenido;
+		
+		Circulo miCirculo = new Circulo(radioEsperado);
+
+		radioObtenido = miCirculo.mostrarRadio();
+		
+		assertEquals(radioEsperado, radioObtenido, 0.01);
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio10Punto9() {
-		fail("Not yet implemented");
+		Double radioEsperado = 10.9;
+		Double radioObtenido;
+		
+		Circulo miCirculo = new Circulo(radioEsperado);
+
+		radioObtenido = miCirculo.mostrarRadio();
+		
+		assertEquals(radioEsperado, radioObtenido, 0.01);
 	}
 	
 	@Test
 	public void queElAreaDeUnCirculoConRadio9Punto8Es615Punto73() {
-		fail("Not yet implemented");
+		Double radioRequerido = 9.8;
+		Double areaObtenida;
+		Double areaEsperada = 615.73;
+		
+		Circulo miCirculo = new Circulo(radioRequerido);
+
+		areaObtenida = miCirculo.mostrarArea();
+		
+		assertEquals(areaEsperada, areaObtenida, 0.01);
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio16Punto6Es865Punto67() {
-		fail("Not yet implemented");
+		Double radioRequerido = 16.6;
+		Double areaObtenida;
+		Double areaEsperada = 865.67;
+		
+		Circulo miCirculo = new Circulo(radioRequerido);
+
+		areaObtenida = miCirculo.mostrarArea();
+		
+		assertEquals(areaEsperada, areaObtenida, 0.01);
 	}
 	
 	@Test
