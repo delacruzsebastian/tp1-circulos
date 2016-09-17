@@ -62,7 +62,9 @@ public class CirculoTest {
 	public void queElAreaDeUnCirculoConRadio9Punto8Es615Punto73() {
 		Double radioRequerido = 9.8;
 		Double areaObtenida;
-		Double areaEsperada = 615.73;
+		//Corrijo area del enunciado. Area sacada de: http://www.calculararea.com/circulo.htm
+		//Double areaEsperada = 615.73;
+		Double areaEsperada = 301.72;
 		
 		Circulo miCirculo = new Circulo(radioRequerido);
 
@@ -75,7 +77,9 @@ public class CirculoTest {
 	public void crearUnCirculoConRadio16Punto6Es865Punto67() {
 		Double radioRequerido = 16.6;
 		Double areaObtenida;
-		Double areaEsperada = 865.67;
+		//Area sacada de: http://www.calculararea.com/circulo.htm
+		//Double areaEsperada = 865.67;
+		Double areaEsperada = 865.7;
 		
 		Circulo miCirculo = new Circulo(radioRequerido);
 
